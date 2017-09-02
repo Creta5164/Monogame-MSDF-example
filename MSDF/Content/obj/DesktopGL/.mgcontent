@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>D:/- Documents/- Monogame project/MSDF/MSDF/Content/MSDFShader.fx</File>
+    <File>D:/- Documents/- Monogame project/MSDF/MSDF/Content/MSDFTexture_CretaIcon.png</File>
+    <File>D:/- Documents/- Monogame project/MSDF/MSDF/Content/MSDFTexture_16xA.png</File>
+    <File>D:/- Documents/- Monogame project/MSDF/MSDF/Content/MSDFTexture_128xA.png</File>
+  </SourceFiles>
+</SourceFileCollection>

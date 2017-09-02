@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>D:/- Documents/- Monogame project/MSDF/MSDF/Content/MSDFShader.fx</SourceFile>
+  <SourceTime>2017-09-02T15:37:49.8296183+09:00</SourceTime>
+  <DestFile>D:/- Documents/- Monogame project/MSDF/MSDF/Content/bin/DesktopGL/MSDFShader.xnb</DestFile>
+  <DestTime>2017-09-02T15:58:49.1728608+09:00</DestTime>
+  <Importer>EffectImporter</Importer>
+  <ImporterTime>2017-03-02T00:05:36+09:00</ImporterTime>
+  <Processor>EffectProcessor</Processor>
+  <ProcessorTime>2017-03-02T00:05:36+09:00</ProcessorTime>
+  <Parameters>
+    <Key>DebugMode</Key>
+    <Value>Auto</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
