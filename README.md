@@ -27,9 +27,9 @@ Disable ColorKeyEnabled in the texture settings.
 
 float  pxRange     : This determines the degree of clarity, best value is 5.
 
-float2 textureSize : set it to texture's size (using Vector2).
+float2 textureSize : set it to texture's size (use Vector2).
 
-float4 bgColor     : determines drawing background color in shader.
+float4 bgColor     : determines drawing background color in shader. (use Vector4, also can use Color -> toVector4)
 
-float4 fgColor     : determines drawing shape color in shader.
+float4 fgColor     : determines drawing shape color in shader. (use Vector4, also can use Color -> toVector4)
 
