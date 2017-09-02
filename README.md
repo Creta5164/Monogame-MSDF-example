@@ -1,4 +1,4 @@
-# Monogame-MSDF-example
+# Monogame MSDF example
 This is an example of how to use MSDF texture in Monogame.
 
 ## Import MSDF shader
