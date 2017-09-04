@@ -26,7 +26,7 @@ If you try to convert to SVG like above (you can check it open to notepad), you 
 
 README.md of Chulmsky's converter it is written like this...
 
- - **-svg \<filename.svg\>** &ndash; to load an SVG file. Note that only the last vector path in the file will be used.
+> - **-svg \<filename.svg\>** &ndash; to load an SVG file. Note that only the last vector path in the file will be used.
 
 So, we need to try convert path from every elements in SVG file.
 
@@ -50,7 +50,7 @@ Let's try convert it to MSDF texture, you can see correctly result like below.
 
 But you need to remember, read again this.
 
- - **-svg \<filename.svg\>** &ndash; to load an SVG file. **Note that only the last vector path in the file will be used**.
+> - **-svg \<filename.svg\>** &ndash; to load an SVG file. **Note that only the last vector path in the file will be used**.
 
 Yes, That's why I asked you to select all the objects you want to convert.
 
