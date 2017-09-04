@@ -1,4 +1,7 @@
 # Monogame MSDF example
+
+![previewGIF](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/Preview.gif)
+
 This is an example of how to use MSDF texture in Monogame.
 
 ## Import MSDF shader
