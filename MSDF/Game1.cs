@@ -38,10 +38,25 @@ namespace MSDF
             base.Initialize();
         }
 
-        Texture2D MSDFTexture;
+        Texture2D BG;
+        Texture2D[] MSDFTextures;
         Vector2 MSDFTextureSize;
 
         Effect MSDFshader;
+
+        int _currentTexture;
+        int currentTexture
+        {
+            get { return _currentTexture; }
+            set {
+                _currentTexture = value;
+                if (_currentTexture < 0) _currentTexture = MSDFTextures.Length - 1;
+                if (_currentTexture > MSDFTextures.Length - 1) _currentTexture = 0;
+
+                MSDFTextureSize = new Vector2(MSDFTextures[_currentTexture].Width,
+                                              MSDFTextures[_currentTexture].Height);
+            }
+        }
         
         /// <summary>
         /// LoadContent will be called once per game and is the place to load
@@ -53,12 +68,19 @@ namespace MSDF
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             //@@@@ IMPORTANT : Your MSDF texture must have disable 'ColorKeyEnabled' in Content Pipeline Tool. @@@@
-            MSDFTexture = Content.Load<Texture2D>("MSDFTexture_16xA");
-            //MSDFTexture = Content.Load<Texture2D>("MSDFTexture_128xA");
-            //MSDFTexture = Content.Load<Texture2D>("MSDFTexture_CretaIcon");
+            MSDFTextures = new Texture2D[]
+            {
+                Content.Load<Texture2D>("MSDFTexture_16xA"),
+                Content.Load<Texture2D>("MSDFTexture_128xA"),
+                Content.Load<Texture2D>("MSDFTexture_CretaIcon"),
+                Content.Load<Texture2D>("MSDFTexture_FontAtlas")
+            };
+
+            BG = Content.Load<Texture2D>("BG");
+
             MSDFshader = Content.Load<Effect>("MSDFShader");
-            
-            MSDFTextureSize = new Vector2(MSDFTexture.Width, MSDFTexture.Height);
+
+            currentTexture = 0;
 
             // TODO: use this.Content to load your game content here
         }
@@ -72,6 +94,8 @@ namespace MSDF
             // TODO: Unload any non ContentManager content here
         }
 
+        bool isPressed = false;
+
         /// <summary>
         /// Allows the game to run logic such as updating the world,
         /// checking for collisions, gathering input, and playing audio.
@@ -84,6 +108,21 @@ namespace MSDF
 
             // TODO: Add your update logic here
 
+            KeyboardState state = Keyboard.GetState();
+
+            if (isPressed && state.GetPressedKeys().Length == 0)
+                isPressed = false;
+
+            if (!isPressed) {
+                if (state.IsKeyDown(Keys.A))
+                    currentTexture--;
+                else if (state.IsKeyDown(Keys.D))
+                    currentTexture++;
+
+                if (state.GetPressedKeys().Length != 0)
+                    isPressed = true;
+            }
+            
             base.Update(gameTime);
         }
 
@@ -95,6 +134,16 @@ namespace MSDF
         {
             GraphicsDevice.Clear(Color.White);
             
+            spriteBatch.Begin();
+
+            spriteBatch.Draw(BG, BG.Bounds, Color.White);
+            
+            spriteBatch.Draw(MSDFTextures[currentTexture],
+                             MSDFTextures[currentTexture].Bounds,
+                             Color.White);
+
+            spriteBatch.End();
+
             spriteBatch.Begin(effect:MSDFshader);
 
             MouseState state = Mouse.GetState();
@@ -111,7 +160,7 @@ namespace MSDF
 
             scale = MSDFTextureSize * scale.X;
 
-            spriteBatch.Draw(MSDFTexture, 
+            spriteBatch.Draw(MSDFTextures[currentTexture], 
                              new Rectangle((int)(screenCenter.X - scale.X / 2),
                                            (int)(screenCenter.Y - scale.Y / 2),
                                            (int)scale.X,

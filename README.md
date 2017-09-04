@@ -52,7 +52,7 @@ But you need to remember, read again this.
 
 > - **-svg \<filename.svg\>** &ndash; to load an SVG file. **Note that only the last vector path in the file will be used**.
 
-Yes, That's why I asked you to select all the objects you want to convert.
+Yes, That's why I told you to select all the objects you want to convert.
 
 Let's check it.
 
