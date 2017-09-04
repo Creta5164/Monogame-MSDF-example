@@ -19,6 +19,7 @@ Chlumsky's msdfgen repo: https://github.com/Chlumsky/msdfgen
 ### convert SVG format to MSDF (Chulmsky's converter guide)
 
 ![tutorial_wrongSVG](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/WrongSVG.png)
+
 If you try to convert to SVG like above (you can check it open to notepad), you will get a failure to load.
 
 ![tutorial_tryingWithWrongSVG](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/TryingWithWrongSVG.png)
@@ -34,14 +35,17 @@ If you have Adobe illustrator then, you can try convert to path easier way!
 Try this. (Select all the objects you want to convert, from the top menu -> **[Object]** -> **[Compound Path]** -> **[Make]**)
 
 ![tutorial_makeCompoundPath](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/ConvertToPathUsingIllustrator.png)
+
 (I have using Korean version, this picture is for example.)
 
 If you have converted it, save it as SVG and open it using notepad.
 
 And you can see now rect, circle, other tags are changed to path tag.
+
 ![tutorial_resultSVG](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectSVG.png)
 
 Let's try convert it to MSDF texture, you can see correctly result like below.
+
 ![tutorial_finalMSDFtexture](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDF.png)
 
 But you need to remember, read again this.
@@ -51,9 +55,11 @@ But you need to remember, read again this.
 Yes, That's why I asked you to select all the objects you want to convert.
 
 Let's check it.
+
 ![tutorial_multiplePathSVG](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/MultiplePathSVG.png)
 
 If you try this SVG to convert MSDF texture, will result makes only one object came out.
+
 ![tutorial_multiplePathSVGResult](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/MultiplePathSVGResult.png)
 
 That's it!
