@@ -49,7 +49,10 @@ And you can see now rect, circle, other tags are changed to path tag.
 
 Let's try convert it to MSDF texture, you can see correctly result like below.
 
-![tutorial_finalMSDFtexture](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDF.png)
+![tutorial_finalMSDFresult](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDF.png)
+
+![tutorial_finalMSDFrender](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDFRender.png)
+![tutorial_finalMSDFtexture](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDFResult.png)
 
 But you need to remember, read again this.
 
