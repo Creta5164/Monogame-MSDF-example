@@ -21,6 +21,8 @@ Chlumsky's msdfgen repo: https://github.com/Chlumsky/msdfgen
 
 ### convert SVG format to MSDF (Chulmsky's converter guide)
 
+#### 1. Only can 'path' tag be able convertible.
+
 ![tutorial_wrongSVG](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/WrongSVG.png)
 
 If you try to convert to SVG like above (you can check it open to notepad), you will get a failure to load.
@@ -54,11 +56,13 @@ Let's try convert it to MSDF texture, you can see correctly result like below.
 ![tutorial_finalMSDFrender](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDFRender.png)
 ![tutorial_finalMSDFtexture](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDFResult.png)
 
-But you need to remember, read again this.
+#### Only can lastest 'path' tag will be convert.
+
+You need to remember, read again this.
 
 > - **-svg \<filename.svg\>** &ndash; to load an SVG file. **Note that only the last vector path in the file will be used**.
 
-Yes, That's why I told you to select all the objects you want to convert.
+Yes, That's why I asked you to select all the objects you want to convert.
 
 Let's check it out.
 
@@ -68,7 +72,9 @@ If you try this SVG to convert MSDF texture, will result makes only one object c
 
 ![tutorial_multiplePathSVGResult](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/MultiplePathSVGResult.png)
 
-But, if you encountered an error in the converter even though you followed the steps above, refer to the following this picture.
+#### Chlumsky's converter SVG rule
+
+If you encountered an error in the converter even though you followed the steps above, refer to the following this picture.
 
 ![tutorial_pathTagRule_before](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/PathTagRule_Before.png)
 
