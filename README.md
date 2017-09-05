@@ -54,7 +54,7 @@ But you need to remember, read again this.
 
 Yes, That's why I asked you to select all the objects you want to convert.
 
-Let's check it.
+Let's check it out.
 
 ![tutorial_multiplePathSVG](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/MultiplePathSVG.png)
 
@@ -62,7 +62,17 @@ If you try this SVG to convert MSDF texture, will result makes only one object c
 
 ![tutorial_multiplePathSVGResult](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/MultiplePathSVGResult.png)
 
-That's it!
+But, if you encountered an error in the converter even though you followed the steps above, refer to the following this picture.
+
+![tutorial_pathTagRule_before](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/PathTagRule_Before.png)
+
+'path' tag with the data want to be converted **must come to first**.
+
+and name of 'd' data in path tag, **must have non-line break code**.
+
+result is looks like this.
+
+![tutorial_pathTagRule_after](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/PathTagRule_After.png)
 
 If you do not have an illustrator, I can not tell you how to do it.
 
