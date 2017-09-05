@@ -107,7 +107,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\MSDFShader.fx" />
-    <Content Include="Content\MSDFTexture.png" />
+    <Content Include="Content\MSDFTexture_128xA.png" />
+    <Content Include="Content\MSDFTexture_16xA.png" />
+    <Content Include="Content\MSDFTexture_CretaIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

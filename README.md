@@ -1,4 +1,7 @@
 # Monogame MSDF example
+
+![previewGIF](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/Preview.gif)
+
 This is an example of how to use MSDF texture in Monogame.
 
 ## Import MSDF shader
@@ -46,13 +49,16 @@ And you can see now rect, circle, other tags are changed to path tag.
 
 Let's try convert it to MSDF texture, you can see correctly result like below.
 
-![tutorial_finalMSDFtexture](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDF.png)
+![tutorial_finalMSDFresult](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDF.png)
+
+![tutorial_finalMSDFrender](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDFRender.png)
+![tutorial_finalMSDFtexture](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDFResult.png)
 
 But you need to remember, read again this.
 
 > - **-svg \<filename.svg\>** &ndash; to load an SVG file. **Note that only the last vector path in the file will be used**.
 
-Yes, That's why I asked you to select all the objects you want to convert.
+Yes, That's why I told you to select all the objects you want to convert.
 
 Let's check it out.
 

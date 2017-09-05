@@ -44,3 +44,5 @@ D:\- Documents\- Monogame project\Monogame-MSDF-example\MSDF\obj\Debug\MSDF.cspr
 D:\- Documents\- Monogame project\Monogame-MSDF-example\MSDF\obj\Debug\MSDF.csproj.CoreCompileInputs.cache
 D:\- Documents\- Monogame project\Monogame-MSDF-example\MSDF\obj\Debug\MSDF.exe
 D:\- Documents\- Monogame project\Monogame-MSDF-example\MSDF\obj\Debug\MSDF.pdb
+D:\- Documents\- Monogame project\Monogame-MSDF-example\MSDF\bin\DesktopGL\AnyCPU\Debug\Content\MSDFTexture_fontAtlas.xnb
+D:\- Documents\- Monogame project\Monogame-MSDF-example\MSDF\bin\DesktopGL\AnyCPU\Debug\Content\BG.xnb
