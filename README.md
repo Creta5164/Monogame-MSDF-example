@@ -56,7 +56,7 @@ Let's try convert it to MSDF texture, you can see correctly result like below.
 ![tutorial_finalMSDFrender](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDFRender.png)
 ![tutorial_finalMSDFtexture](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDFResult.png)
 
-#### Only can lastest 'path' tag will be convert.
+#### 2. Only can lastest 'path' tag will be convert.
 
 You need to remember, read again this.
 
@@ -72,13 +72,7 @@ If you try this SVG to convert MSDF texture, will result makes only one object c
 
 ![tutorial_multiplePathSVGResult](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/MultiplePathSVGResult.png)
 
-If you do not have an illustrator, I can not tell you how to do it.
-
-But if I have find it solution, I'll update this README.md.
-
-If anyone else in this article knows the alternative, do pull request to this repository!
-
-#### Chlumsky's converter SVG rule
+#### 3. Chlumsky's converter SVG rule
 
 If you encountered an error in the converter even though you followed the steps above, refer to the following this picture.
 
