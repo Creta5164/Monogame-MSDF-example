@@ -21,6 +21,8 @@ Chlumsky's msdfgen repo: https://github.com/Chlumsky/msdfgen
 
 ### convert SVG format to MSDF (Chulmsky's converter guide)
 
+#### 1. Only can 'path' tag be able convertible.
+
 ![tutorial_wrongSVG](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/WrongSVG.png)
 
 If you try to convert to SVG like above (you can check it open to notepad), you will get a failure to load.
@@ -54,13 +56,15 @@ Let's try convert it to MSDF texture, you can see correctly result like below.
 ![tutorial_finalMSDFrender](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDFRender.png)
 ![tutorial_finalMSDFtexture](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/CorrectMSDFResult.png)
 
-But you need to remember, read again this.
+#### 2. Only can lastest 'path' tag will be convert.
+
+You need to remember, read again this.
 
 > - **-svg \<filename.svg\>** &ndash; to load an SVG file. **Note that only the last vector path in the file will be used**.
 
-Yes, That's why I told you to select all the objects you want to convert.
+Yes, That's why I asked you to select all the objects you want to convert.
 
-Let's check it.
+Let's check it out.
 
 ![tutorial_multiplePathSVG](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/MultiplePathSVG.png)
 
@@ -68,13 +72,25 @@ If you try this SVG to convert MSDF texture, will result makes only one object c
 
 ![tutorial_multiplePathSVGResult](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/MultiplePathSVGResult.png)
 
-That's it!
-
 If you do not have an illustrator, I can not tell you how to do it.
 
 But if I have find it solution, I'll update this README.md.
 
 If anyone else in this article knows the alternative, do pull request to this repository!
+
+#### 3. Chlumsky's converter SVG rule
+
+If you encountered an error in the converter even though you followed the steps above, refer to the following this picture.
+
+![tutorial_pathTagRule_before](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/PathTagRule_Before.png)
+
+'path' tag with the data want to be converted **must come to first**.
+
+and name of 'd' data in path tag, **must have non-line break code**.
+
+result is looks like this.
+
+![tutorial_pathTagRule_after](https://raw.githubusercontent.com/Creta5164/Monogame-MSDF-example/master/images/PathTagRule_After.png)
 
 ## Monogame Content Pipeline Settings
 
