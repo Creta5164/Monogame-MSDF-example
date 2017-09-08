@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/- Documents/- Monogame project/Monogame-MSDF-example/MSDF/Content/MSDFTexture_16xA.png</SourceFile>
-  <SourceTime>2017-09-02T15:57:42.8944722+09:00</SourceTime>
-  <DestFile>D:/- Documents/- Monogame project/Monogame-MSDF-example/MSDF/Content/bin/DesktopGL/MSDFTexture_16xA.xnb</DestFile>
-  <DestTime>2017-09-04T20:07:35.4478737+09:00</DestTime>
+  <SourceFile>G:/workSpace/MSDFExample/MSDF/Content/MSDFTexture_16xA.png</SourceFile>
+  <SourceTime>2017-09-04T11:45:04+09:00</SourceTime>
+  <DestFile>G:/workSpace/MSDFExample/MSDF/Content/bin/DesktopGL/MSDFTexture_16xA.xnb</DestFile>
+  <DestTime>2017-09-08T17:05:16+09:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-02T00:05:36+09:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

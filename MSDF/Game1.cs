@@ -73,7 +73,12 @@ namespace MSDF
                 Content.Load<Texture2D>("MSDFTexture_16xA"),
                 Content.Load<Texture2D>("MSDFTexture_128xA"),
                 Content.Load<Texture2D>("MSDFTexture_CretaIcon"),
-                Content.Load<Texture2D>("MSDFTexture_FontAtlas")
+                Content.Load<Texture2D>("test"),
+                Content.Load<Texture2D>("U+00242"),
+                Content.Load<Texture2D>("U+0024"),
+                Content.Load<Texture2D>("MSDFTexture_FontAtlas"),
+                Content.Load<Texture2D>("MSDFTexture_FontAtlas2"),
+                Content.Load<Texture2D>("MSDFTexture_FontAtlas3")
             };
 
             BG = Content.Load<Texture2D>("BG");
@@ -155,7 +160,7 @@ namespace MSDF
             MSDFshader.Parameters["textureSize"].SetValue(MSDFTextureSize);                 //MSDF shader needs texture size.
 
                                                                                             //MSDF shader will lerping with this colors.
-            MSDFshader.Parameters["bgColor"].SetValue(Vector4.Zero);
+            MSDFshader.Parameters["bgColor"].SetValue(new Vector4(1, 1, 1, 1));
             MSDFshader.Parameters["fgColor"].SetValue(new Vector4(0, 0.5f, 1, 1));
 
             scale = MSDFTextureSize * scale.X;
