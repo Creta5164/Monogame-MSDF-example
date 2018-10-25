@@ -99,7 +99,10 @@ Disable ColorKeyEnabled in the texture settings.
 
 ## MSDF Shader uniforms
 
-float  pxRange     : This determines the degree of clarity, best value is 5, if you set it to negative value(for example, -5), you can make it invert color.
+float  pxRange     : This value indicates the distance at which the MSDF texture is sharpened.
+It is necessary to give a value according to the distance value set in the MSDF generator to obtain good image quality.
+If this field is set to a negative value, the color is inverted.
+~~This determines the degree of clarity, best value is 5, if you set it to negative value(for example, -5), you can make it invert color.~~
 
 float2 textureSize : set it to texture's size (use Vector2).
 
